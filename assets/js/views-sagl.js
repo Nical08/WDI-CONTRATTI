@@ -1,4 +1,4 @@
-/* Viste 05–06 — Verso la Sagl e controllo/voto. */
+/* Viste — Verso la Sagl e controllo/voto. */
 (function () {
   "use strict";
 
@@ -84,14 +84,16 @@
             <div class="card card-dark">
               <p class="card-kicker" style="color:#d99b84">Checkpoint</p>
               <h3>Prima di convocare l'assemblea</h3>
-              ${list([
-                "Il progetto è scritto e contiene il nuovo statuto?",
-                "Il rapporto spiega il rapporto di scambio e i diritti?",
-                "La verifica o la deroga PMI è documentata?",
-                "La consultazione è stata garantita o rinunciata?",
-                "La decisione è stata presa con la maggioranza corretta?",
-                "Atto pubblico e iscrizione sono pianificati?"
-              ])}
+              <div class="mt-2">
+                ${list([
+                  "Il progetto è scritto e contiene il nuovo statuto?",
+                  "Il rapporto spiega il rapporto di scambio e i diritti?",
+                  "La verifica o la deroga PMI è documentata?",
+                  "La consultazione è stata garantita o rinunciata?",
+                  "La decisione è stata presa con la maggioranza corretta?",
+                  "Atto pubblico e iscrizione sono pianificati?"
+                ])}
+              </div>
             </div>
           </div>
         </div>
@@ -138,10 +140,10 @@
           ${U.table(["Diritto", "Founder (A)", "Investor (B)", "Dove si scrive"], [
             ["<strong>Nominale e numero</strong>", "CHF [●] per quota; n. [●]", "CHF [●] per quota; n. [●]", "Statuto / progetto"],
             ["<strong>Utili e avanzo</strong>", "Quota [●]; eventuale preferenza [●]", "Quota [●]; eventuale preferenza ex art. 799", "Statuto"],
-            ["<strong>Voto</strong>", "Proporzionale, per numero di quote o tetto [●]", "Proporzionale, per numero di quote o tetto [●]", "Statuto, art. 806"],
-            ["<strong>Veto</strong>", "Solo se personale e attribuito a un socio; materie [●]", "Non automatico; eventuale veto [●]", "Statuto, art. 807"],
-            ["<strong>Trasferimento</strong>", "Gradimento, prelazione, conversione [●]", "Gradimento, prelazione [●]", "Statuto, artt. 785–788"],
-            ["<strong>Informazione</strong>", "Diritto di ragguaglio ai gerenti (art. 802)", "Reportistica aggiuntiva [●]", "Legge + accordo"]
+            ["<strong>Voto</strong>", "Proporzionale, per numero di quote o tetto [●]", "Proporzionale, per numero di quote o tetto [●]", "Statuto, art. 806 CO"],
+            ["<strong>Veto</strong>", "Solo se personale e attribuito a un socio; materie [●]", "Non automatico; eventuale veto [●]", "Statuto, art. 807 CO"],
+            ["<strong>Trasferimento</strong>", "Gradimento, prelazione, conversione [●]", "Gradimento, prelazione [●]", "Statuto, artt. 785–788 CO"],
+            ["<strong>Informazione</strong>", "Diritto di ragguaglio ai gerenti (art. 802 CO)", "Reportistica aggiuntiva [●]", "Legge + accordo"]
           ], { note: "Le colonne sono simmetriche di proposito: nessun diritto è implicito nel nome. Le etichette A/B sono di progetto; i diritti restano quelli scritti nello statuto." })}
         </div>
       </section>
@@ -149,14 +151,14 @@
       <section class="section" id="sagl-voto">
         ${U.sectionHead("05", "Il potere", "Voto e veto", "Il voto si conta. Il veto si esercita. Non sono la stessa cosa.")}
         <div class="grid-2">
-          ${card("Art. 806", "Voto", list([
+          ${card("Art. 806 CO", "Voto", list([
             "Di regola il voto è proporzionale al valore nominale delle quote (cpv. 1).",
             "Lo statuto può adottare una quota = un voto, senza riguardo al nominale (cpv. 2).",
             "In quel caso, la quota con nominale più basso deve valere almeno un decimo della più alta: rapporto massimo 10:1.",
             "Lo statuto può limitare il numero di voti dei possessori di più quote (tetto).",
-            "Il criterio per numero di quote non vale per la revisione, i periti e l'azione di responsabilità (cpv. 3)."
+            "Il criterio per numero di quote non vale per la nomina della revisione, la designazione di periti e la decisione sull'azione di responsabilità (cpv. 3)."
           ]), "card-accent")}
-          ${card("Art. 807", "Veto", list([
+          ${card("Art. 807 CO", "Veto", list([
             "Lo statuto può attribuire a singoli soci un veto contro determinate deliberazioni.",
             "Le materie vanno elencate: un veto generico non basta.",
             "È personale e non trasferibile (cpv. 3).",
@@ -171,17 +173,17 @@
       <section class="section" id="sagl-organi">
         ${U.sectionHead("06", "Gli organi", "Chi decide, chi amministra, chi controlla", "La Sagl non è una SA in miniatura: ha gerenti, non un consiglio d'amministrazione.")}
         <div class="grid-3">
-          ${card("Artt. 804–808", "Assemblea", list([
+          ${card("Artt. 804–808 CO", "Assemblea", list([
             "È l'organo supremo della società (art. 804).",
             "È convocata almeno 20 giorni prima, salvo i casi di legge (art. 805).",
             "Delibera a maggioranza assoluta dei voti rappresentati, salvo legge o statuto (art. 808)."
           ]))}
-          ${card("Artt. 809–815", "Gerenti", list([
+          ${card("Artt. 809–815 CO", "Gerenti", list([
             "Uno o più gerenti, persone fisiche, nominati dall'assemblea (art. 809).",
             "Amministrano e rappresentano. Almeno uno deve essere autorizzato a rappresentare ed essere domiciliato in Svizzera (art. 814).",
             "Sono revocabili in ogni tempo (art. 815)."
           ]))}
-          ${card("Artt. 818, 727a", "Revisione", list([
+          ${card("Artt. 818, 727a CO", "Revisione", list([
             "Si applica per analogia la disciplina della SA (art. 818).",
             "La rinuncia alla revisione limitata è possibile solo se sussistono i presupposti dell'art. 727a: un numero medio annuo di posti a tempo pieno non superiore a 10, il consenso di tutti i soci e la notifica al Registro.",
             "La rinuncia non elimina la contabilità e la verifica della solvibilità."
@@ -323,7 +325,7 @@
             ${U.callout("warning", "Il 10:1 non è automatico", `<p>È un limite massimo, non un diritto acquisito. A parità di capitale, un rapporto inferiore riduce il vantaggio di voto. Con il voto proporzionale al nominale, il 20% economico resta 20% di voti.</p>`)}
           </div>
           <div class="card card-dark">
-            <p class="card-kicker" style="color:#d99b84">Formula</p>
+            <p class="card-kicker" style="color:#d99b84">Formula dell'esempio</p>
             <h3>Due quote, due misure</h3>
             <div class="instrument-note" style="background:rgba(255,255,255,.06);border-left-color:#d99b84;color:#dce6df">
               <p class="mono" style="color:#f3edde">quota voti A = nA / (nA + nB)</p>
@@ -476,7 +478,7 @@
           ${card("Cosa dà", "Voce e responsabilità", list([
             "Partecipazione alle sedute e accesso alle informazioni.",
             "Voto collegiale sulle decisioni del consiglio.",
-            "Possibilità di rappresentare una categoria, se previsto (art. 709 SA).",
+            "Possibilità di rappresentare una categoria, se previsto (art. 709 CO).",
             "Doveri di diligenza e fedeltà; responsabilità."
           ]), "card-accent")}
           ${card("Cosa non dà", "Nessun controllo automatico", list([
