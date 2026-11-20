@@ -185,7 +185,7 @@
           ]))}
           ${card("Artt. 818, 727a CO", "Revisione", list([
             "Si applica per analogia la disciplina della SA (art. 818).",
-            "La rinuncia alla revisione limitata è possibile solo se sussistono i presupposti dell'art. 727a: un numero medio annuo di posti a tempo pieno non superiore a 10, il consenso di tutti i soci e la notifica al Registro.",
+            "La rinuncia alla revisione limitata è possibile solo se sussistono i presupposti dell'art. 727a: in particolare, un numero medio annuo di posti a tempo pieno non superiore a 10, il consenso di tutti i soci e la notifica al Registro.",
             "La rinuncia non elimina la contabilità e la verifica della solvibilità."
           ]))}
         </div>
@@ -417,11 +417,11 @@
         ${U.sectionHead("05", "I limiti", "Cosa non si può fare", "Sei scorciatoie che non reggono davanti a uno statuto o a una delibera.")}
         ${U.table(["Scorciatoia", "Perché non regge", "Cosa fare invece"], [
           ["<strong>Superare il rapporto 10:1 nel modello una quota = un voto</strong>", "L'art. 806 cpv. 2 CO (Sagl) e l'art. 693 cpv. 2 CO (SA) fissano un limite per il voto per numero di quote/azioni. Un nominale 20:1 non si corregge con un patto se si adotta quel criterio.", "Ridurre il nominale privilegiato, aumentare quello ordinario o accettare il voto proporzionale."],
-          ["<strong>Ignorare le maggioranze dell'art. 704</strong>", "Nella SA le materie elencate richiedono almeno due terzi dei voti rappresentati e la maggioranza del nominale. Un accordo al 60% non le supera.", "Verificare la materia, costruire la maggioranza e negoziare prima della delibera."],
+          ["<strong>Ignorare le maggioranze dell'art. 704</strong>", "Nella SA le materie elencate richiedono almeno due terzi dei voti rappresentati e la maggioranza assoluta del nominale. Un accordo al 60% non le supera.", "Verificare la materia, costruire la maggioranza e negoziare prima della delibera."],
           ["<strong>Eliminare il diritto di voto</strong>", "Le limitazioni devono essere statutarie, uniformi e non possono privare il socio del voto in modo assoluto. Un tetto non è un azzeramento.", "Usare tetto, quote privilegiate, veto o materie riservate, nei limiti di legge."],
           ["<strong>Usare un veto SA inesistente</strong>", "Nella SA non c'è un veto statutario generale come l'art. 807 della Sagl. Un patto parasociale non vincola la società.", "Costruire statuto, maggioranze qualificate e patto parasociale; verificarne l'efficacia."],
           ["<strong>Confondere patto e statuto</strong>", "Il patto vincola chi lo firma; lo statuto è la regola della società, iscritta e opponibile nei limiti di legge. Non sono intercambiabili.", "Mettere nello statuto i diritti societari; usare il patto per obblighi personali e di voto."],
-          ["<strong>Pensare che il 60% basti per il 2/3</strong>", "60% è meno di 66,7%. Nella SA serve anche la maggioranza del nominale. La soglia del 60% è un obiettivo della demo, non una regola.", "Calcolare la maggioranza sulla singola materia e sommare i due requisiti."]
+          ["<strong>Pensare che il 60% basti per il 2/3</strong>", "60% è meno di 66,7%. Nella SA serve anche la maggioranza assoluta del nominale. La soglia del 60% è un obiettivo della demo, non una regola.", "Calcolare la maggioranza sulla singola materia e sommare i due requisiti."]
         ], { note: "Le maggioranze dell'art. 704 riguardano la SA. Nella Sagl si applicano le maggioranze di legge e di statuto: il principio è lo stesso, un patto non sostituisce la delibera." })}
         <div class="mt-3">
           ${U.callout("legal", "Statuto e patto, due piani", `<p>Lo statuto è la regola della società. Un patto parasociale vincola i soci che lo firmano, ma non sostituisce la delibera dell'assemblea né crea un veto statutario. Le due cose vanno coordinate, non confuse.</p>`)}
@@ -433,7 +433,7 @@
         ${U.table(["Aspetto", "SNC", "Sagl", "SA"], [
           ["<strong>Voto</strong>", "Non ci sono quote: il contratto sociale regola la partecipazione e le decisioni.", "Proporzionale al nominale (art. 806 cpv. 1); una quota = un voto con nominale max 10:1 (cpv. 2); tetto possibile.", "Proporzionale al nominale (art. 692); azioni a voto privilegiato nei limiti dell'art. 693; tetto possibile."],
           ["<strong>Veto</strong>", "Non c'è un veto tipizzato: contano le regole di voto del contratto (di regola unanimità).", "Veto personale e non trasferibile, solo se previsto dallo statuto (art. 807).", "Non esiste un veto statutario generale; servono statuto, maggioranze qualificate e patto parasociale."],
-          ["<strong>Maggioranze</strong>", "Di regola unanimità; il contratto può prevedere altro nei limiti di legge.", "Maggioranza assoluta dei voti rappresentati, salvo legge o statuto (art. 808).", "Maggioranza dei voti (art. 703); due terzi dei voti e maggioranza del nominale per le materie dell'art. 704."],
+          ["<strong>Maggioranze</strong>", "Di regola unanimità; il contratto può prevedere altro nei limiti di legge.", "Maggioranza assoluta dei voti rappresentati, salvo legge o statuto (art. 808).", "Maggioranza dei voti (art. 703); due terzi dei voti e maggioranza assoluta del nominale per le materie dell'art. 704."],
           ["<strong>Organi</strong>", "Soci; eventuali gerenti.", "Assemblea; gerenti; revisione (artt. 804–818).", "Assemblea generale; consiglio d'amministrazione; revisione."],
           ["<strong>Trasferimenti</strong>", "Consenso degli altri soci, salvo diversa regola contrattuale.", "Forma scritta e approvazione dell'assemblea, salvo deroga statutaria (artt. 785–786).", "Restrizioni statutarie e approvazione; valore reale (artt. 685a–685c)."],
           ["<strong>Informazioni</strong>", "Secondo contratto e obblighi di rendiconto.", "Ogni socio può chiedere ragguagli ai gerenti (art. 802).", "In assemblea; richiesta scritta per il 10% del capitale o dei voti (art. 697)."]

@@ -66,8 +66,8 @@
         [
           ["<strong>Nicola Cappelli</strong>", "50,0%", "45,0%", "CHF 0", "Non vende; non versa"],
           ["<strong>Bryan Ciaponi</strong>", "50,0%", "45,0%", "CHF 0", "Non vende; non versa"],
-          ["Investitore", "—", "10,0%", "CHF 1'000'000", "Nuove quote/azioni; il denaro entra in società"],
-          ["<strong>Totale</strong>", "<strong>100,0%</strong>", "<strong>100,0%</strong>", "<strong>CHF 1'000'000</strong>", "Il denaro entra in società"]
+          ["Investitore", "—", "10,0%", "CHF 1'000'000", "Nuove quote/azioni; il denaro entra nella società"],
+          ["<strong>Totale</strong>", "<strong>100,0%</strong>", "<strong>100,0%</strong>", "<strong>CHF 1'000'000</strong>", "Il denaro entra nella società"]
         ],
         { cls: "table-compact", note: "Esempio illustrativo, non un'offerta. Percentuali semplificate e fully diluted: non includono pool di incentivazione, convertibili o valore nominale." }
       )}
@@ -95,7 +95,7 @@
           ["<strong>Nicola Cappelli</strong>", "45,0%", "40,5%", "-4,5", "Diluito del 10% relativo"],
           ["<strong>Bryan Ciaponi</strong>", "45,0%", "40,5%", "-4,5", "Diluito del 10% relativo"],
           ["Investitore 1", "10,0%", "9,0%", "-1,0", "Non vende; scende per il nuovo denominatore"],
-          ["Investitore 2", "—", "10,0%", "+10,0", "Nuove quote/azioni; CHF 1'000'000 in società"],
+          ["Investitore 2", "—", "10,0%", "+10,0", "Nuove quote/azioni; CHF 1'000'000 nella società"],
           ["<strong>Totale</strong>", "<strong>100,0%</strong>", "<strong>100,0%</strong>", "<strong>0,0</strong>", "Nessuna vendita"]
         ],
         { cls: "table-compact", note: "Esempio illustrativo. Ogni quota precedente è moltiplicata per 0,9: 45% × 0,9 = 40,5%; 10% × 0,9 = 9%. L'investitore 1 possiede le stesse quote/azioni di prima." }
