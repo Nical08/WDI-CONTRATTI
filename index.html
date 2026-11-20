@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="WebDev Innovations — demo di documentazione societaria: SNC, futura Sagl e futura SA. Materiale illustrativo, non consulenza legale.">
+  <title>WebDev Innovations · Laboratorio societario</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23123831'/%3E%3Cpath d='M15 21l7 24 10-18 10 18 7-24' fill='none' stroke='%23f3efe6' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/extras.css">
+</head>
+<body>
+  <a class="skip-link" href="#view">Vai al contenuto</a>
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar" aria-label="Navigazione principale">
+      <div class="sidebar-top">
+        <a class="brand" href="#/" aria-label="WebDev Innovations — panoramica">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M9 15l5.5 19L24 19.5 33.5 34 39 15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="10" r="2.2" fill="currentColor"/></svg>
+          </span>
+          <span class="brand-text">
+            <strong>WebDev Innovations</strong>
+            <em>Laboratorio societario</em>
+          </span>
+        </a>
+        <button class="sidebar-close" id="sidebar-close" aria-label="Chiudi menu">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div class="phase-rail" aria-label="Percorso societario">
+        <div class="phase-rail-line"></div>
+        <a href="#/snc" class="phase-rail-item is-active">
+          <span class="phase-dot"></span>
+          <span><b>SNC</b><small>Oggi</small></span>
+        </a>
+        <a href="#/sagl" class="phase-rail-item">
+          <span class="phase-dot"></span>
+          <span><b>Sagl</b><small>Fase 2</small></span>
+        </a>
+        <a href="#/sagl" class="phase-rail-item">
+          <span class="phase-dot"></span>
+          <span><b>SA</b><small>Fase 3</small></span>
+        </a>
+      </div>
+
+      <nav class="nav" id="sidebar-nav">
+        <div class="nav-group">
+          <p class="nav-label">Orientarsi</p>
+          <a href="#/" data-nav="/">Panoramica</a>
+          <a href="#/percorso" data-nav="/percorso">Il percorso</a>
+          <a href="#/decisioni" data-nav="/decisioni">Decisioni aperte <span class="nav-count" id="nav-open-count">—</span></a>
+        </div>
+        <div class="nav-group">
+          <p class="nav-label">Oggi · SNC</p>
+          <a href="#/snc" data-nav="/snc">La società oggi</a>
+          <a href="#/governance" data-nav="/governance">Governance e firme</a>
+          <a href="#/economia" data-nav="/economia">Economia e conferimenti</a>
+          <a href="#/protezione" data-nav="/protezione">Proprietà intellettuale</a>
+          <a href="#/uscite" data-nav="/uscite">Uscite e conflitti</a>
+        </div>
+        <div class="nav-group">
+          <p class="nav-label">Domani · Sagl / SA</p>
+          <a href="#/sagl" data-nav="/sagl">Verso la Sagl</a>
+          <a href="#/controllo" data-nav="/controllo">Controllo e voto</a>
+          <a href="#/investimenti" data-nav="/investimenti">Investimenti e round</a>
+        </div>
+        <div class="nav-group">
+          <p class="nav-label">Strumenti</p>
+          <a href="#/simulatore" data-nav="/simulatore">Simulatore diluizione</a>
+          <a href="#/clausole" data-nav="/clausole">Biblioteca clausole</a>
+          <a href="#/documenti" data-nav="/documenti">Documenti</a>
+          <a href="#/fonti" data-nav="/fonti">Fonti e metodo</a>
+        </div>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="demo-badge"><span></span> Demo · non consulenza legale</div>
+        <p>Bozze di lavoro per Nicola Cappelli e Bryan Ciaponi. Verifica professionale obbligatoria prima di qualsiasi firma.</p>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-btn menu-btn" id="menu-btn" aria-label="Apri menu" aria-controls="sidebar" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+          <div class="breadcrumb" id="breadcrumb">
+            <span>WebDev Innovations</span><i>/</i><strong>Panoramica</strong>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <span class="status-pill status-current"><span class="dot"></span> Fase attuale: SNC</span>
+          <a class="btn btn-ghost btn-sm" href="#/fonti">Metodo</a>
+          <button class="btn btn-ink btn-sm" data-action="print">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 8V3h10v5M7 17H5a2 2 0 01-2-2v-4a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2h-2M7 14h10v7H7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            Stampa
+          </button>
+        </div>
+      </header>
+
+      <main id="view" tabindex="-1"></main>
+
+      <footer class="site-footer">
+        <div>
+          <strong>WebDev Innovations · Laboratorio societario</strong>
+          <p>Materiale dimostrativo. Non costituisce consulenza legale, fiscale o finanziaria e non è destinato alla firma.</p>
+        </div>
+        <div class="footer-meta">
+          <span>Versione demo · novembre 2026</span>
+          <a href="#/fonti">Fonti e disclaimer</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">Questa demo richiede JavaScript per la navigazione, i documenti e il simulatore. Attiva JavaScript o apri il progetto con un browser moderno.</div></noscript>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/docs.js"></script>
+  <script src="assets/js/doc-snc.js"></script>
+  <script src="assets/js/doc-founder.js"></script>
+  <script src="assets/js/doc-internal.js"></script>
+  <script src="assets/js/doc-sagl.js"></script>
+  <script src="assets/js/doc-sa.js"></script>
+  <script src="assets/js/doc-investor.js"></script>
+  <script src="assets/js/markdown.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/simulator.js"></script>
+  <script src="assets/js/control.js"></script>
+  <script src="assets/js/views-core.js"></script>
+  <script src="assets/js/views-snc.js"></script>
+  <script src="assets/js/views-economy.js"></script>
+  <script src="assets/js/views-sagl.js"></script>
+  <script src="assets/js/views-invest.js"></script>
+  <script src="assets/js/views-tools.js"></script>
+  <script src="assets/js/views-sim.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
