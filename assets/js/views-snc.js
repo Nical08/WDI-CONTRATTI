@@ -21,7 +21,7 @@
       '</div>';
   }
 
-  W.views.snc = function (ctx) {
+  window.WDI.views.snc = function (ctx) {
     return `<div class="page">
       <div class="grid-2-1">
         <div>
@@ -190,7 +190,7 @@
     </div>`;
   };
 
-  W.views.governance = function (ctx) {
+  window.WDI.views.governance = function (ctx) {
     return `<div class="page">
       <div class="grid-2-1">
         <div>
@@ -406,10 +406,10 @@
             <h4>Buy-sell</h4>
             <p>Un socio formula un'offerta unica di acquisto o vendita; l'altro sceglie se comprare o vendere alle stesse condizioni. Va testato sulla liquidità, sul valore e sui diritti dei terzi.</p>
           </div>
-          <div class="timeline-item is-now">
+          <div class="timeline-item">
             <p class="timeline-tag">Legge · rimedio</p>
             <h4>Rimedi giudiziari</h4>
-            <p>Scioglimento per gravi motivi (art. 545 CO), esclusione del socio (art. 577 CO), indennità di uscita (art. 580 CO). Il giudice resta il controllo finale.</p>
+            <p>Scioglimento per gravi motivi (art. 545 CO), esclusione del socio (art. 577 CO), indennità di uscita (art. 580 CO). Resta fermo il controllo del giudice.</p>
           </div>
         </div>
         <div class="mt-3">

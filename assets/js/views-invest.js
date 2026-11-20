@@ -51,7 +51,7 @@
         </div>
         ${U.status("esempio")}
       </div>
-      <div class="kpi-grid mt-2">
+      <div class="grid-3 mt-2">
         <div class="kpi"><b>CHF 9'000'000</b><span>Pre-money</span></div>
         <div class="kpi"><b>CHF 1'000'000</b><span>Aumento di capitale</span></div>
         <div class="kpi"><b>CHF 10'000'000</b><span>Post-money</span></div>
@@ -84,7 +84,7 @@
         </div>
         ${U.status("esempio")}
       </div>
-      <div class="kpi-grid mt-2">
+      <div class="grid-3 mt-2">
         <div class="kpi"><b>CHF 9'000'000</b><span>Pre-money del round</span></div>
         <div class="kpi"><b>CHF 1'000'000</b><span>Importo</span></div>
         <div class="kpi"><b>CHF 10'000'000</b><span>Post-money</span></div>

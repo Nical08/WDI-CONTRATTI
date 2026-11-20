@@ -217,7 +217,7 @@
       `<div class="stack">` +
       U.callout(
         "decision", "Nessun ruolo assegnato",
-        "<p>La demo non nomina CEO, CTO o altri titoli. Nicola e Bryan sono soci e firmatari secondo il contratto; i ruoli operativi saranno definiti in un documento separato, con deleghe e limiti scritti.</p>"
+        "<p>La demo non nomina CEO, CTO o altri titoli. Nicola e Bryan sono i due soci; firme e ruoli operativi saranno definiti in un documento separato, con deleghe e limiti scritti.</p>"
       ) +
       U.callout(
         "warning", "Prima di firmare",
@@ -298,7 +298,7 @@
       ),
       gateItem(
         "03", "Decisione di trasformazione", "verifica", "Da verificare",
-        "I soci decidono secondo la LFus. Nella SNC serve l'unanimità, salvo una regola statutaria che ammetta i tre quarti. Non è una conseguenza automatica della crescita."
+        "I soci decidono secondo la LFus. Nella SNC serve l'unanimità, salvo una regola del contratto sociale che ammetta i tre quarti. Non è una conseguenza automatica della crescita."
       ),
       gateItem(
         "04", "Progetto e rapporto LFus", "verifica", "Da verificare",
@@ -609,7 +609,7 @@
       `<div><p class="card-kicker">Stato</p><div class="filters" role="group" aria-label="Filtra per stato">${statusFilters}</div></div>` +
       `<p class="ledger-count" id="decision-count" aria-live="polite">Mostrate ${total} di ${total}</p>` +
       `</div>` +
-      `<div class="mb-3"><p class="card-kicker">Area</p><div class="filters" role="group" aria-label="Filtra per area">${areaFilters}</div></div>` +
+      `<div class="filter-bar"><div><p class="card-kicker">Area</p><div class="filters" role="group" aria-label="Filtra per area">${areaFilters}</div></div></div>` +
 
       `<div class="table-wrap">` +
       `<table class="table-compact" style="min-width: 800px" aria-label="Registro delle decisioni">` +

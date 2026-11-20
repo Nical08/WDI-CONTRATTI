@@ -100,7 +100,9 @@
           <p class="card-kicker">Regola</p>
           <h3>50% a ciascuno</h3>
           <p class="mt-1">L'utile e la perdita risultanti dal conto annuale sono ripartiti al 50%. È una scelta contrattuale: va scritta nel contratto sociale e richiamata nell'accordo tra fondatori.</p>
-          <p class="small muted mt-2">Art. 558 CO: la legge rinvia al conto annuale e ammette una diversa ripartizione pattuita.</p>
+          <p>Il 50% non è un diritto a un pagamento annuale. È la misura con cui si legge il risultato: se non c'è utile distribuibile, non c'è distribuzione.</p>
+          <p class="quote-box mt-3">L'utile si ripartisce; la cassa si decide.</p>
+          <p class="small muted mt-3">Art. 558 CO: la legge rinvia al conto annuale e ammette una diversa ripartizione pattuita.</p>
         </article>
         <article class="card">
           <p class="card-kicker">Prima di distribuire</p>
