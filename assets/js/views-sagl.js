@@ -313,7 +313,7 @@
         ${U.sectionHead("02", "Il calcolatore", "Quanto pesa il 20%?", "Muovi l'economia e cambia il modello di voto. Il risultato mostra il divario, non una raccomandazione.")}
         <div id="control-root"></div>
         <p class="mini-note mt-2">Modello semplificato a tre holder: due fondatori con la stessa quota e un investitore. Non è una cap table reale e non calcola nominale, aggio, imposte o diritti di categoria.</p>
-        ${U.callout("note", "Il 60% è un obiettivo, non una soglia di legge", `<p>La soglia del 60% serve a confrontare i modelli nella demo. Le maggioranze legali sono quelle applicabili alla singola materia. Nella SA, per le materie dell'art. 704 CO servono almeno due terzi dei voti rappresentati e la maggioranza dei valori nominali rappresentati.</p>`)}
+        ${U.callout("note", "Il 60% è un obiettivo, non una soglia di legge", `<p>La soglia del 60% serve a confrontare i modelli nella demo. Le maggioranze legali sono quelle applicabili alla singola materia. Nella SA, per le materie dell'art. 704 CO servono almeno due terzi dei voti rappresentati e la maggioranza assoluta dei valori nominali rappresentati.</p>`)}
       </section>
 
       <section class="section" id="controllo-matematica">
@@ -321,7 +321,7 @@
         <div class="grid-2">
           <div class="stack">
             <p class="body-lg">Con il criterio una quota = un voto, il voto non segue il capitale: segue il numero di quote. Se le quote dei fondatori hanno nominale 1 e quelle degli investitori nominale 10, ogni quota vale un voto, ma la quota da 10 pesa dieci volte di più nell'economia.</p>
-            <p class="body-lg">Il rapporto massimo tra il nominale più alto e quello più basso è 10:1. Non è un rapporto tra voti: è un vincolo sul nominale. Serve a evitare che il voto si stacchi completamente dal capitale di rischio.</p>
+            <p class="body-lg">Quando lo statuto adotta il criterio una quota = un voto, il rapporto massimo tra il nominale più alto e quello più basso è 10:1. Non è un rapporto tra voti: è un vincolo sul nominale. Serve a evitare che il voto si stacchi completamente dal capitale di rischio.</p>
             ${U.callout("warning", "Il 10:1 non è automatico", `<p>È un limite massimo, non un diritto acquisito. A parità di capitale, un rapporto inferiore riduce il vantaggio di voto. Con il voto proporzionale al nominale, il 20% economico resta 20% di voti.</p>`)}
           </div>
           <div class="card card-dark">
@@ -384,7 +384,7 @@
             ${U.callout("legal", "Le condizioni", `<ul style="padding-left:16px;margin:0"><li><strong>Sagl — art. 806 cpv. 2 CO:</strong> lo statuto deve adottare una quota = un voto; le quote a nominale ridotto devono valere almeno un decimo di quelle a nominale più alto; il capitale deve essere interamente liberato e le quote vanno iscritte nel libro delle quote.</li><li><strong>SA — art. 693 cpv. 2 CO:</strong> azioni a nominale ridotto, nominative e interamente liberate; rapporto massimo 10:1.</li><li><strong>Previsione espressa:</strong> il criterio non si desume da un patto o da una tabella.</li><li><strong>Eccezioni:</strong> il criterio per numero di quote/azioni non vale per revisione, periti e azione di responsabilità (art. 806 cpv. 3; art. 693 cpv. 3).</li></ul>`)}
           </div>
           <div>
-            ${U.callout("warning", "Cosa non dice", `<p>Non dice che il 60% sia garantito, che gli investitori accettino la struttura o che le maggioranze di legge siano superate. Il 10:1 è un limite massimo; il 71,4% vale solo con questo numero di quote e questo nominale.</p>`)}
+            ${U.callout("warning", "Cosa non dice", `<p>Non dice che il 60% sia garantito, che gli investitori accettino la struttura o che le maggioranze di legge siano superate. Il 10:1 è un limite massimo per il voto per numero di quote/azioni; il 71,4% vale solo con questo numero di quote e questo nominale.</p>`)}
           </div>
         </div>
       </section>
@@ -416,7 +416,7 @@
       <section class="section" id="controllo-limiti">
         ${U.sectionHead("05", "I limiti", "Cosa non si può fare", "Sei scorciatoie che non reggono davanti a uno statuto o a una delibera.")}
         ${U.table(["Scorciatoia", "Perché non regge", "Cosa fare invece"], [
-          ["<strong>Superare il rapporto 10:1</strong>", "L'art. 806 cpv. 2 CO (Sagl) e l'art. 693 cpv. 2 CO (SA) fissano un limite. Un nominale 20:1 non si corregge con un patto.", "Ridurre il nominale privilegiato, aumentare quello ordinario o accettare il voto proporzionale."],
+          ["<strong>Superare il rapporto 10:1 nel modello una quota = un voto</strong>", "L'art. 806 cpv. 2 CO (Sagl) e l'art. 693 cpv. 2 CO (SA) fissano un limite per il voto per numero di quote/azioni. Un nominale 20:1 non si corregge con un patto se si adotta quel criterio.", "Ridurre il nominale privilegiato, aumentare quello ordinario o accettare il voto proporzionale."],
           ["<strong>Ignorare le maggioranze dell'art. 704</strong>", "Nella SA le materie elencate richiedono almeno due terzi dei voti rappresentati e la maggioranza del nominale. Un accordo al 60% non le supera.", "Verificare la materia, costruire la maggioranza e negoziare prima della delibera."],
           ["<strong>Eliminare il diritto di voto</strong>", "Le limitazioni devono essere statutarie, uniformi e non possono privare il socio del voto in modo assoluto. Un tetto non è un azzeramento.", "Usare tetto, quote privilegiate, veto o materie riservate, nei limiti di legge."],
           ["<strong>Usare un veto SA inesistente</strong>", "Nella SA non c'è un veto statutario generale come l'art. 807 della Sagl. Un patto parasociale non vincola la società.", "Costruire statuto, maggioranze qualificate e patto parasociale; verificarne l'efficacia."],

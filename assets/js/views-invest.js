@@ -490,7 +490,7 @@
           ${U.sectionHead("01", "Legenda", "Leggere una scheda prima di usarla",
             "Lo stato descrive il testo, non la validità. Lo stage descrive il contesto di progetto, non un'autorizzazione automatica.")}
           ${U.callout("warning", "Non tutte le clausole stanno nella SNC",
-            "<p>La SNC non ha quote o azioni né una struttura di organi come la Sagl o la SA. Le clausole su aumento di capitale, anti-dilution, preferenza di liquidazione, voto privilegiato e consiglio di amministrazione presuppongono una società di capitali. Nella SNC vanno riscritte o non si applicano.</p>" +
+            "<p>La SNC non ha quote o azioni né una struttura di organi come la Sagl o la SA. Le clausole su aumento di capitale, anti-dilution, preferenza di liquidazione, voto privilegiato e consiglio di amministrazione presuppongono, nella forma in cui sono scritte, una società di capitali. Nella SNC vanno riscritte o non si applicano.</p>" +
             "<p>Anche una scheda marcata <strong>tutte</strong> è una clausola da adattare: lo stage indica il contesto di progetto, non una validità automatica.</p>")}
           <div class="card card-flat mt-2">
             <div class="row-between gap-2">
@@ -623,9 +623,13 @@
 
       const total = allClauses.length || items.length;
       if (count) {
-        count.textContent = visible === total
-          ? visible + " " + clauseWord(visible)
-          : visible + " di " + total + " " + clauseWord(total);
+        if (visible === total) {
+          count.textContent = visible + " " + clauseWord(visible);
+        } else if (visible === 1) {
+          count.textContent = "1 clausola su " + total;
+        } else {
+          count.textContent = visible + " di " + total + " " + clauseWord(total);
+        }
       }
       if (empty) empty.hidden = visible !== 0;
     }
