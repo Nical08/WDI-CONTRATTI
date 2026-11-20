@@ -517,21 +517,23 @@
         <section class="section">
           ${U.sectionHead("02", "Schede", "Filtra, leggi, scegli",
             "Filtra per forma societaria e cerca per nome, scopo o documento. Il contatore indica quante schede restano visibili.")}
-          <div class="card card-tight mb-2">
-            <div class="row-between gap-2">
-              <div class="search-box" style="flex:1 1 280px;max-width:440px">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-                <input type="search" id="clause-search" placeholder="Cerca per nome, scopo o documento" aria-label="Cerca nelle clausole" aria-controls="clause-list" autocomplete="off" spellcheck="false">
+          <div class="filter-bar">
+            <div class="card card-tight" style="width:100%">
+              <div class="row-between gap-2">
+                <div class="search-box" style="flex:1 1 280px;max-width:440px">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <input type="search" id="clause-search" placeholder="Cerca per nome, scopo o documento" aria-label="Cerca nelle clausole" aria-controls="clause-list" autocomplete="off" spellcheck="false">
+                </div>
+                <div class="filters" id="clause-stage-filters" role="group" aria-label="Filtra per forma societaria">
+                  ${stageButtons}
+                </div>
               </div>
-              <div class="filters" id="clause-stage-filters" role="group" aria-label="Filtra per forma societaria">
-                ${stageButtons}
-              </div>
-            </div>
-            <div class="row-between mt-1">
-              <p class="mini-note mb-0">I conteggi includono le clausole trasversali. Stage <b>tutte</b> non significa valida ovunque: significa da adattare.</p>
-              <div class="row gap-1">
-                <span class="ledger-count" id="clause-count" aria-live="polite">${countLabel}</span>
-                <button class="btn btn-ghost btn-sm" type="button" data-clause-reset>Azzera</button>
+              <div class="row-between mt-1">
+                <p class="mini-note mb-0">I conteggi includono le clausole trasversali. Stage <b>tutte</b> non significa valida ovunque: significa da adattare.</p>
+                <div class="row gap-1">
+                  <span class="ledger-count" id="clause-count" aria-live="polite">${countLabel}</span>
+                  <button class="btn btn-ghost btn-sm" type="button" data-clause-reset>Azzera</button>
+                </div>
               </div>
             </div>
           </div>

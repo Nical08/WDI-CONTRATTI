@@ -114,7 +114,7 @@
           ${U.table(["Voce", "Regola", "Base"], [
             ["<strong>Capitale minimo</strong>", "CHF 20'000, interamente liberato.", "artt. 773–774 CO"],
             ["<strong>Valore nominale</strong>", "Ogni quota ha un valore nominale superiore a zero. Può essere emessa sopra il nominale; l'aggio non è capitale.", "artt. 773–774 CO"],
-            ["<strong>Liberazione</strong>", "Il capitale deve essere interamente liberato. Non basta promettere il versamento.", "art. 774 CO"],
+            ["<strong>Liberazione</strong>", "Il capitale e le quote devono essere interamente liberati. Non basta promettere il versamento.", "art. 774 CO"],
             ["<strong>Libro delle quote</strong>", "Soci, numero, valore nominale e categorie delle quote. Ogni socio può consultarlo.", "art. 790 CO"],
             ["<strong>Conferimenti</strong>", "Ogni socio deve conferire il prezzo di emissione; i conferimenti non si restituiscono.", "art. 793 CO"],
             ["<strong>Versamenti suppletivi</strong>", "Non previsti nella versione base. Se introdotti, richiedono base statutaria, limiti di legge e consenso dei soci interessati. L'importo per quota non può superare il doppio del nominale.", "artt. 795–797 CO"],
@@ -301,7 +301,7 @@
         ${U.sectionHead("01", "I tre livelli", "Economia, voti, veto/consiglio", "Non sono la stessa cosa e non si sommano.")}
         <div class="grid-3">
           ${card("01 · Economia", "Quanto vale la partecipazione", `<p class="small">Utili, avanzo di liquidazione, prezzo in caso di vendita. Dipende dal capitale e dai diritti patrimoniali.</p>`)}
-          ${card("02 · Voti", "Chi decide in assemblea", `<p class="small">Dipende dal criterio statutario e dalle maggioranze applicabili. Il voto può essere proporzionale, per numero di quote o limitato da un tetto.</p>`)}
+          ${card("02 · Voti", "Chi decide in assemblea", `<p class="small">Dipende dal criterio statutario e dalle maggioranze applicabili. Il voto può essere proporzionale, per numero di quote o azioni, oppure limitato da un tetto.</p>`)}
           ${card("03 · Veto e consiglio", "Chi blocca o influenza", `<p class="small">Veto statutario nella Sagl, materie riservate, seggio in consiglio. Un seggio non è un veto; un veto non è un voto.</p>`)}
         </div>
         <div class="mt-3">
