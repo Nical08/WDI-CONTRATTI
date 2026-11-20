@@ -381,7 +381,7 @@
         "Completare contratto, accordo fondatori, regolamento, conferimenti, ruoli, firme, proprietà intellettuale e conti. Decidere se e quando la Sagl è utile, con una verifica legale e fiscale."
       ),
       timelineItem(
-        "is-now", "Fase investitori",
+        "", "Fase investitori",
         "Sagl operativa e primo round", "verifica", "Da verificare",
         "Progettare statuto Sagl, categorie, voto e investor agreement. Ogni contatto con investitori va preparato nel rispetto della LSerFi e senza offerte improvvisate."
       ),

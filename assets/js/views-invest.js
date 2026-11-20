@@ -16,8 +16,8 @@
   };
 
   const RESOLUTION = {
-    primary: "Nella Sagl/SA: delibera dei soci e formalità di aumento; nella SA atto pubblico e iscrizione. Verificare il diritto d'opzione (art. 652b CO; art. 781 CO per la Sagl).",
-    secondary: "Nessuna delibera di aumento. Servono le approvazioni previste da statuto o contratto; nella SA verificare gli artt. 685a–685c CO.",
+    primary: "Nella Sagl e nella SA: delibera dei soci, atto pubblico e iscrizione secondo la forma. Verificare il diritto d'opzione (art. 652b CO; art. 781 CO, rinvio per analogia, per la Sagl).",
+    secondary: "Nessuna delibera di aumento. Nella Sagl: forma scritta e approvazione dell'assemblea, salvo deroga statutaria (artt. 785–786 CO). Nella SA: verificare gli artt. 685a–685c CO.",
     loan: "Nessuna delibera societaria per il solo prestito. Servono le competenze interne e, se previsto, l'approvazione per indebitamento sopra soglia.",
     convertible: "Alla conversione serve la delibera di aumento e le formalità applicabili; la struttura va verificata con il notaio."
   };
@@ -170,7 +170,7 @@
           <div><p class="tiny muted mb-0">A cosa serve</p><p class="small">Correggere la posizione dell'investitore con un aggiustamento di prezzo o un'emissione compensativa.</p></div>
           <div><p class="tiny muted mb-0">Come si scrive</p><p class="small">Full ratchet o broad-based weighted average, con esclusioni per piani di incentivazione, conversioni e operazioni approvate; eventuale cap.</p></div>
           <div><p class="tiny muted mb-0">Cosa non fa</p><p class="small">Non impedisce la diluizione se l'investitore non partecipa e non garantisce un exit o un rendimento.</p></div>
-          <div><p class="tiny muted mb-0">Dove si attua</p><p class="small">Investor agreement e delibera di aumento. SA: artt. 652b e 704 CO. Sagl: art. 781 CO.</p></div>
+          <div><p class="tiny muted mb-0">Dove si attua</p><p class="small">Investor agreement e delibera di aumento. SA: artt. 652b e 704 CO. Sagl: art. 781 CO, per analogia.</p></div>
         </div>
         <p class="mini-note mt-2">La formula va testata sulla cap table fully diluted. Non è un diritto legale generale.</p>
       </article>
@@ -185,7 +185,7 @@
           <div><p class="tiny muted mb-0">A cosa serve</p><p class="small">Definire se e in che misura l'investitore recupera il capitale prima della ripartizione residuale.</p></div>
           <div><p class="tiny muted mb-0">Come si scrive</p><p class="small">Preferenza 1x non partecipante o partecipante con cap, seniority, definizione di exit e di ricavato netto.</p></div>
           <div><p class="tiny muted mb-0">Cosa non fa</p><p class="small">Non è un debito e non dà diritto a essere pagati prima dei creditori sociali; non garantisce un importo.</p></div>
-          <div><p class="tiny muted mb-0">Dove si attua</p><p class="small">Statuto con quote/azioni privilegiate. SA: artt. 654 e 656 CO. Sagl: art. 799 CO.</p></div>
+          <div><p class="tiny muted mb-0">Dove si attua</p><p class="small">Statuto con quote/azioni privilegiate. SA: artt. 654 e 656 CO. Sagl: art. 799 CO, per analogia.</p></div>
         </div>
         <p class="mini-note mt-2">Può ridurre il ricavato dei fondatori. Va coordinata con la cap table e con le regole di exit.</p>
       </article>
@@ -294,7 +294,7 @@
         ${U.sectionHead("03", "Fondatori", "Chi partecipa e chi resta fuori",
           "La legge non impone un versamento ulteriore. La mancata partecipazione ha un effetto economico, non una sanzione automatica. Le regole cambiano con la forma societaria.")}
         ${U.callout("warning", "I fondatori non sono obbligati a investire",
-          "<p>Nessuna regola della Sagl o della SA impone a Nicola e Bryan di versare nuovo denaro in un aumento di capitale. Se non partecipano, la loro percentuale scende perché aumentano le quote/azioni in circolazione. Non c'è una penale automatica, salvo un obbligo contrattuale specifico.</p>" +
+          "<p>Nessuna norma applicabile alla Sagl o alla SA impone a Nicola e Bryan di versare nuovo denaro in un aumento di capitale. Se non partecipano, la loro percentuale scende perché aumentano le quote/azioni in circolazione. Non c'è una penale automatica, salvo un obbligo contrattuale specifico.</p>" +
           "<p>Il diritto di sottoscrizione pro quota va coordinato con la legge e con lo statuto: nella SA art. 652b CO; nella Sagl art. 781 CO richiama per analogia le regole sull'aumento. Nella SNC non ci sono azioni: l'ingresso di un nuovo socio e la modifica del contratto seguono il contratto sociale e il consenso richiesto.</p>")}
         <div class="split-list mt-2">
           <div>
@@ -367,7 +367,7 @@
           </article>
         </div>
         <div class="mt-2">${U.callout("verify", "Prima di contattare il mercato",
-          "<p>La raccolta presso investitori può attivare obblighi della LSerFi, inclusi prospetto ed esenzioni, e richiede di documentare destinatari, canali e sollecitazione. Verificare prima di inviare un term sheet o contattare il mercato.</p>")}</div>
+          "<p>La raccolta presso investitori può attivare obblighi della LSerFi, tra cui il prospetto, e richiede di verificare le esenzioni applicabili. Documentare destinatari, canali e sollecitazione prima di inviare un term sheet o contattare il mercato.</p>")}</div>
         <p class="mini-note mt-2">Materiale dimostrativo. Non è un'offerta, un impegno a investire o una consulenza legale, fiscale o finanziaria.</p>
       </section>
     </div>`;
@@ -471,7 +471,7 @@
           <div class="measure-wide">
             <span class="eyebrow">Strumenti · Biblioteca</span>
             <h1>Diciassette clausole, ma non tutte stanno bene ovunque.</h1>
-            <p class="lead mt-2">La biblioteca della demo contiene venti schede. Il titolo è un monito, non un inventario: nessuna clausola è neutra e nessuna vale ovunque. La matrice è una cassetta degli attrezzi, non un contratto da incollare.</p>
+            <p class="lead mt-2">La biblioteca della demo contiene venti schede. Il numero nel titolo è un monito, non un conteggio: nessuna clausola è neutra e nessuna vale ovunque. La matrice è una cassetta degli attrezzi, non un contratto da incollare.</p>
             <div class="doc-meta">
               ${U.pill(total + " schede · c01–c20", "status-example")}
               ${U.pill("Legge / proposta / verifica", "status-verify")}
@@ -504,7 +504,7 @@
               </div>
               <span class="tiny muted">La legenda descrive il testo, non la validità.</span>
             </div>
-            <p class="mini-note mt-1">Legge: regola vigente. Proposta: testo da negoziare. Verifica: richiede un professionista. Esempio: dato illustrativo. Futuro: meccanismo di una fase successiva. Da decidere: punto aperto.</p>
+            <p class="mini-note mt-1">Legge: regola vigente. Proposta: testo da negoziare. Verifica: richiede un professionista. Esempio: dato illustrativo. Futuro: meccanismo di una fase successiva. Da decidere: punto aperto. Nella matrice attuale le schede sono proposte, verifiche o da decidere.</p>
             <div class="chip-row mt-2">
               <span class="chip"><b>Tutte</b> clausola trasversale, da adattare</span>
               <span class="chip"><b>Sagl</b> scritta per la fase Sagl; non automatica in SNC o SA</span>

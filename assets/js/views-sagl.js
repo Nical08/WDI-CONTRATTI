@@ -381,7 +381,7 @@
         </div>
         <div class="grid-2 mt-3">
           <div>
-            ${U.callout("legal", "Le condizioni", `<ul style="padding-left:16px;margin:0"><li><strong>Sagl — art. 806 cpv. 2 CO:</strong> lo statuto deve adottare una quota = un voto; le quote a nominale ridotto devono valere almeno un decimo di quelle a nominale più alto, essere iscritte nel libro delle quote e avere capitale interamente liberato.</li><li><strong>SA — art. 693 cpv. 2 CO:</strong> azioni a nominale ridotto, nominative e interamente liberate; rapporto massimo 10:1.</li><li><strong>Previsione espressa:</strong> il criterio non si desume da un patto o da una tabella.</li><li><strong>Eccezioni:</strong> il criterio per numero di quote/azioni non vale per revisione, periti e azione di responsabilità (art. 806 cpv. 3; art. 693 cpv. 3).</li></ul>`)}
+            ${U.callout("legal", "Le condizioni", `<ul style="padding-left:16px;margin:0"><li><strong>Sagl — art. 806 cpv. 2 CO:</strong> lo statuto deve adottare una quota = un voto; le quote a nominale ridotto devono valere almeno un decimo di quelle a nominale più alto; il capitale deve essere interamente liberato e le quote vanno iscritte nel libro delle quote.</li><li><strong>SA — art. 693 cpv. 2 CO:</strong> azioni a nominale ridotto, nominative e interamente liberate; rapporto massimo 10:1.</li><li><strong>Previsione espressa:</strong> il criterio non si desume da un patto o da una tabella.</li><li><strong>Eccezioni:</strong> il criterio per numero di quote/azioni non vale per revisione, periti e azione di responsabilità (art. 806 cpv. 3; art. 693 cpv. 3).</li></ul>`)}
           </div>
           <div>
             ${U.callout("warning", "Cosa non dice", `<p>Non dice che il 60% sia garantito, che gli investitori accettino la struttura o che le maggioranze di legge siano superate. Il 10:1 è un limite massimo; il 71,4% vale solo con questo numero di quote e questo nominale.</p>`)}
@@ -410,7 +410,7 @@
             ${U.callout("warning", "Il tetto è una scelta visibile", `<p>Non è un trucco: chi legge lo statuto lo vede e può rifiutarlo. Deve essere previsto nello statuto, applicato in modo uniforme e non può eliminare il diritto di voto. Un tetto molto basso può rendere il round poco attraente o essere contestato.</p>`)}
           </div>
         </div>
-        ${U.callout("note", "Il limite aritmetico", `<p>In questo modello, il tetto massimo che lascia ai fondatori almeno il 60% è circa 13% per holder (60,6%); con 14% scendono sotto. Il 12% è un esempio, non una soglia legale.</p>`)}
+        ${U.callout("note", "Il limite aritmetico", `<p>In questo modello, con il 20% di economia, il tetto massimo che lascia ai fondatori almeno il 60% è circa 13% per holder (60,6%); con 14% scendono sotto. Il 12% è un esempio, non una soglia legale.</p>`)}
       </section>
 
       <section class="section" id="controllo-limiti">
@@ -478,7 +478,7 @@
           ${card("Cosa dà", "Voce e responsabilità", list([
             "Partecipazione alle sedute e accesso alle informazioni.",
             "Voto collegiale sulle decisioni del consiglio.",
-            "Possibilità di rappresentare una categoria, se previsto (art. 709 CO).",
+            "Rappresentanza della propria categoria in consiglio, se prevista (art. 709 CO).",
             "Doveri di diligenza e fedeltà; responsabilità."
           ]), "card-accent")}
           ${card("Cosa non dà", "Nessun controllo automatico", list([

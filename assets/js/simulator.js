@@ -405,14 +405,13 @@
 
   function renderMetrics(res) {
     const entityLabel = res.entity === "sa" ? "SA" : "Sagl";
-    const modelLabel = VOTE_LABEL[res.model];
     const founderBreak = res.holders.filter((h) => h.kind === "founder")
       .map((h) => esc(h.name.split(" ")[0] || h.name) + " " + fmtPct(h.economic, 1)).join(" · ");
     return '<div class="metrics">' +
-      metric("Ultima valutazione post-money", res.lastPost ? fmtCHF(res.lastPost) : "—", res.lastPost ? "Prima: " + fmtCHF(res.lastPre || 0) : "Nessun round priced", "") +
+      metric("Ultima post-money", res.lastPost ? fmtCHF(res.lastPost) : "—", res.lastPost ? "Prima: " + fmtCHF(res.lastPre || 0) : "Nessun round priced", "") +
       metric("Versato nella società", fmtCHF(res.companyCash), res.debt > 0 ? "Di cui debito " + fmtCHF(res.debt) : "Aumenti di capitale e prestiti", "is-dark") +
       metric("Fondatori · economia", fmtPct(res.founderEcon, 1), founderBreak || "Nessun fondatore", "is-accent") +
-      metric("Fondatori · voti", fmtPct(res.founderVotes, 1), esc(entityLabel) + " · " + esc(modelLabel) + (res.atLeast60 ? " · obiettivo 60% raggiunto" : " · sotto il 60%"), "") +
+      metric("Fondatori · voti", fmtPct(res.founderVotes, 1), esc(entityLabel) + " · " + (res.atLeast60 ? "≥ 60%" : "< 60%"), "") +
       "</div>";
   }
 
@@ -533,16 +532,16 @@
     let html = "";
     html += errorBlock(res);
     html += '<div class="sim-block">' + renderMetrics(res) + "</div>";
-    html += '<div class="grid-2">';
     html += '<div class="sim-block"><div class="sim-block-head"><div><h3>Cap table finale</h3><p>Economia e voti sono grandezze distinte.</p></div><span class="pill ' + (res.atLeast60 ? "status-current" : "status-open") + '">' + (res.atLeast60 ? "≥ 60% voti" : "< 60% voti") + "</span></div>" + renderCapTable(res) + "</div>";
+    html += '<div class="grid-2">';
     html += '<div class="sim-block"><div class="sim-block-head"><div><h3>Voti vs economia</h3><p>Modello: ' + esc(VOTE_LABEL[res.model]) + "</p></div></div>" + renderVoteChart(res) +
       '<div class="callout callout-legal mt-2" style="font-size:11.5px"><div class="callout-title">Limite legale</div><p>' +
       (res.entity === "sagl"
         ? "Sagl: art. 806 CO. Il voto può essere proporzionale al nominale, una quota = un voto (nominale minimo 1/10 del massimo) o limitato da un tetto statutario. Il veto è disciplinato dall'art. 807 CO."
         : "SA: artt. 692–693 CO. Il voto privilegiato richiede azioni a nominale ridotto, nominative e interamente liberate, con rapporto massimo 10:1. Le maggioranze dell'art. 704 restano inderogabili.") +
       "</p></div></div>";
-    html += "</div>";
     html += '<div class="chart-box"><h3>Evoluzione della proprietà economica</h3>' + renderOwnershipChart(res) + "</div>";
+    html += "</div>";
     html += '<div class="sim-block"><div class="sim-block-head"><div><h3>Dettaglio dei round</h3><p>Prima e dopo ogni operazione, con l\'effetto sulle quote dei fondatori.</p></div></div>' + renderRoundDetail(res) + "</div>";
     html += '<div class="sim-block"><div class="sim-block-head"><div><h3>Assunzioni del modello</h3></div></div>' +
       '<ul style="padding-left:16px;font-size:12px;line-height:1.6;color:var(--muted)">' +
